@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.title {
+  z-index: 50;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  margin: 0;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+.player {
+  --char-size: 50px;
+  --char-top: -9000;
+  position: absolute;
+  background-color: rgb(33, 148, 17);
+  width: var(--char-size);
+  height: var(--char-size);
+  left: var(--char-size);
+  border-radius: 50%;
+  top: var(--char-top);
+}
